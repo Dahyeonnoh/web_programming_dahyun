@@ -1,0 +1,616 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("/ponyo/ponyoback.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.ponyoback_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bubble1_img,
+.bubble2_img,
+.bubble3_img,
+.bubble4_img,
+.bubble5_img {
+  position: absolute;
+  transform-origin: center;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.bubble1_img,
+.bubble2_img,
+.bubble3_img,
+.bubble4_img,
+.bubble5_img,
+.sosuke_img,
+.text2_img,
+.ponyo_img,
+.boat_img,
+.bucket_img,
+.text_img {
+  position: absolute;
+  width: 200px;
+}
+
+.ponyo_img,
+.sosuke_img,
+.boat_img,
+.bucket_img,
+.bubble1_img,
+.bubble2_img,
+.bubble3_img,
+.bubble4_img,
+.bubble5_img {
+  z-index: 5;
+}
+
+@font-face {
+  font-family: "BookkMyungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BookkMyungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+.text-overlay h1 {
+  position: absolute;
+  top: 29.5%;
+  left: 30.4%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #dfdcdc;
+  z-index: 1;
+
+  display: inline-block;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 0.8;
+  letter-spacing: 0.35em;
+
+  font-family: "BookkMyungjo", serif;
+  font-weight: 450;
+  font-size: 1.3rem;
+}
+
+.text-overlay h2 {
+  position: absolute;
+  top: 30%;
+  left: 31.8%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #dfdcdc;
+  z-index: 1;
+
+  display: inline-block;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 0.8;
+  letter-spacing: 4.5px;
+
+  font-family: "BookkMyungjo", serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.text-overlay p {
+  position: absolute;
+  top: 30.2%;
+  left: 48.3%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #dcdedf;
+  z-index: 1;
+
+  letter-spacing: 1.4px;
+
+  font-family: "BookkMyungjo", serif;
+  font-weight: 400;
+  font-size: 0.77rem;
+  opacity: 0.85;
+}
+
+.text-overlay p1 {
+  position: absolute;
+  top: 32.7%;
+  left: 41.5%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #dcdedf;
+  z-index: 1;
+
+  letter-spacing: 1.4px;
+
+  font-family: "BookkMyungjo", serif;
+  font-weight: 400;
+
+  font-size: 0.77rem;
+  opacity: 0.85;
+}
+
+.text-overlay p2 {
+  position: absolute;
+  top: 35.2%;
+  left: 41.8%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #dcdedf;
+  z-index: 1;
+
+  letter-spacing: 1.4px;
+
+  font-family: "BookkMyungjo", serif;
+  font-weight: 400;
+  font-size: 0.77rem;
+  opacity: 0.85;
+}
+
+.text-overlay p3 {
+  position: absolute;
+  top: 40.45%;
+  left: 38.5%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #edebeb;
+  z-index: 1;
+
+  letter-spacing: 2.7px;
+
+  font-family: "BookkMyungjo", serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.text-overlay p4 {
+  position: absolute;
+  top: 39.5%;
+  left: 47%;
+  transform: translateX(-50%);
+  text-align: left;
+  color: #e7e5e5;
+  z-index: 1;
+
+  letter-spacing: 1.6px;
+
+  font-family: "BookkMyungjo", serif;
+  font-weight: 408;
+  font-size: 1.6rem;
+  opacity: 0.85;
+}
+
+
+.bubble1_img {
+  top: 65%;
+  left: 40%;
+  width: 180px;
+  height: auto;
+  animation: float1 5s infinite ease-in-out;
+}
+
+.bubble2_img {
+  top: 40%;
+  left: 9%;
+  width: 320px;
+  height: auto;
+  animation: float2 6.5s infinite ease-in-out;
+}
+
+.bubble3_img {
+  top: 20%;
+  left: 60%;
+  width: 260px;
+  height: auto;
+  animation: float3 7s infinite ease-in-out;
+}
+
+.bubble4_img {
+  top: 10%;
+  left: 30%;
+  width: 220px;
+  height: auto;
+  animation: float4 5.5s infinite ease-in-out;
+}
+
+.bubble5_img {
+  top: 52%;
+  left: 80%;
+  width: 220px;
+  height: auto;
+  animation: float5 6s infinite ease-in-out;
+}
+
+.bubble_setting {
+  transform-origin: center center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.bubble1_img:hover {
+  animation: wobble 0.5s infinite;
+  transform: scale(1.1);
+}
+
+.bubble2_img:hover {
+  animation: wobble 0.5s infinite;
+  transform: scale(1.1);
+}
+
+.bubble3_img:hover {
+  animation: wobble 0.5s infinite;
+  transform: scale(1.1);
+}
+
+.bubble4_img:hover {
+  animation: wobble 0.5s infinite;
+  transform: scale(1.1);
+}
+
+.bubble5_img:hover {
+  animation: wobble 0.5s infinite;
+  transform: scale(1.1);
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  25% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  75% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.1);
+  }
+}
+
+@keyframes bubbleReappear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.bubble_fragment {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fragmentFly 0.6s ease-out forwards;
+}
+
+
+@keyframes fragmentFly {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1.1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9) rotate(0deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.2) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+.pop {
+  animation: pop 0.07s forwards !important;
+}
+
+
+
+@keyframes fragment {
+  from {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--x), var(--y)) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes float1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(8px, -10px) rotate(2deg);
+  }
+  50% {
+    transform: translate(-5px, 10px) rotate(-2deg);
+  }
+  75% {
+    transform: translate(5px, -8px) rotate(1deg);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-12px, 8px) rotate(-3deg);
+  }
+  50% {
+    transform: translate(6px, -10px) rotate(3deg);
+  }
+  75% {
+    transform: translate(-8px, 6px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -12px) rotate(4deg);
+  }
+  50% {
+    transform: translate(-10px, 10px) rotate(-4deg);
+  }
+  75% {
+    transform: translate(6px, -8px) rotate(2deg);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-8px, 10px) rotate(-2deg);
+  }
+  50% {
+    transform: translate(12px, -6px) rotate(2deg);
+  }
+  75% {
+    transform: translate(-5px, 8px) rotate(-1deg);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes float5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, 6px) rotate(2deg);
+  }
+  50% {
+    transform: translate(-8px, -10px) rotate(-3deg);
+  }
+  75% {
+    transform: translate(6px, 10px) rotate(1deg);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.sosukec,
+.sosuke,
+.ponyo,
+.boat,
+.bucket {
+  position: absolute;
+  transition: all 1s ease;
+}
+
+.sosuke_img,
+.sosukec_img {
+  top: 50%;
+  left: 60%;
+  width: 220px;
+  height: auto;
+  position: absolute;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.sosukec_img:hover {
+  transform: scale(1.08);
+}
+
+.sosuke_img.jump {
+  animation: sosukeJump 0.8s ease-out;
+}
+
+@keyframes sosukeJump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ponyo_img {
+  position: absolute;
+  width: 380px;
+  top: 38%; 
+  left: 46%; 
+  opacity: 0;
+  transform: translate(-300%, -400%) scale(0.8); 
+  z-index: 5;
+}
+
+.ponyo_img.fly {
+  animation: ponyoFly 1.2s ease-out forwards;
+}
+
+@keyframes ponyoFly {
+  0% {
+    opacity: 0;
+    transform: translate(-300%, -400%) scale(0.8); 
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1); 
+  }
+}
+
+.ponyo_img.floating {
+  animation: ponyoFloat 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes ponyoFloat {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(2px, 17px)  scale(1);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+
+.boat_img {
+  top: 65%;
+  left: 58.3%;
+  width: 85px;
+  height: auto;
+  rotate: 5deg;
+  position: absolute;
+  transform: rotate(13deg);
+}
+
+.boat_img.tilt {
+  animation: boatTilt 1s ease-out forwards;
+}
+
+@keyframes boatTilt {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(160px) rotate(-60deg);
+  }
+}
+
+.bucket_wrapper {
+  position: absolute;
+  top: 71.6%;
+  left: 62.5%;
+  width: 140px;
+  height: auto;
+  z-index: 8;
+}
+
+.bucket_img {
+  width: 100%;
+  transform: rotate(50deg);
+  transform-origin: center bottom; /
+}
+
+.bucket_wrapper.jump {
+  animation: bucketJump 0.9s ease-out;
+}
+
+
+@keyframes bucketJump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-57px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.wave-container {
+  position: absolute; 
+  top: 12.8%;
+  left: 42%;
+  width: 460px;
+  height: auto;      
+  padding: 10px 0;   
+  overflow: visible;
+  overflow: hidden;
+  transform: translateX(-50%); 
+  z-index: 1; 
+}
+
+.text_wave_img {
+  width: 100%;
+  display: block;
+  animation: waveMotion 4s infinite linear;
+  position: relative;
+}
+
+
+
+
+
+.text2_img {
+  top: 7%;
+  left: 37.7%;
+  width: 128px;
+  height: auto;
+}
+
