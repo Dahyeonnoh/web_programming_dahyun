@@ -1,3 +1,4 @@
+
 .image-container {
   position: relative;
   width: 100%;
@@ -86,7 +87,7 @@
 
   font-family: "BookkMyungjo", serif;
   font-weight: 450;
-  font-size: 1.3rem;
+  font-size: 1.04rem;
 }
 
 .text-overlay h2 {
@@ -106,13 +107,13 @@
 
   font-family: "BookkMyungjo", serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .text-overlay p {
   position: absolute;
   top: 30.2%;
-  left: 48.3%;
+  left: 48.55%;
   transform: translateX(-50%);
   text-align: left;
   color: #dcdedf;
@@ -122,7 +123,7 @@
 
   font-family: "BookkMyungjo", serif;
   font-weight: 400;
-  font-size: 0.77rem;
+  font-size: 0.616rem;
   opacity: 0.85;
 }
 
@@ -140,7 +141,7 @@
   font-family: "BookkMyungjo", serif;
   font-weight: 400;
 
-  font-size: 0.77rem;
+  font-size: 0.616rem;
   opacity: 0.85;
 }
 
@@ -157,14 +158,14 @@
 
   font-family: "BookkMyungjo", serif;
   font-weight: 400;
-  font-size: 0.77rem;
+  font-size: 0.616rem;
   opacity: 0.85;
 }
 
 .text-overlay p3 {
   position: absolute;
-  top: 40.45%;
-  left: 38.5%;
+  top: 40.48%;
+  left: 38.4%;
   transform: translateX(-50%);
   text-align: left;
   color: #edebeb;
@@ -174,7 +175,7 @@
 
   font-family: "BookkMyungjo", serif;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.7rem;
   opacity: 0.85;
 }
 
@@ -191,7 +192,7 @@
 
   font-family: "BookkMyungjo", serif;
   font-weight: 408;
-  font-size: 1.6rem;
+  font-size: 1.28rem;
   opacity: 0.85;
 }
 
@@ -199,7 +200,7 @@
 .bubble1_img {
   top: 65%;
   left: 40%;
-  width: 180px;
+  width: 144px;
   height: auto;
   animation: float1 5s infinite ease-in-out;
 }
@@ -207,7 +208,7 @@
 .bubble2_img {
   top: 40%;
   left: 9%;
-  width: 320px;
+  width: 256px;
   height: auto;
   animation: float2 6.5s infinite ease-in-out;
 }
@@ -215,7 +216,7 @@
 .bubble3_img {
   top: 20%;
   left: 60%;
-  width: 260px;
+  width: 208px;
   height: auto;
   animation: float3 7s infinite ease-in-out;
 }
@@ -223,7 +224,7 @@
 .bubble4_img {
   top: 10%;
   left: 30%;
-  width: 220px;
+  width: 176px;
   height: auto;
   animation: float4 5.5s infinite ease-in-out;
 }
@@ -231,7 +232,7 @@
 .bubble5_img {
   top: 52%;
   left: 80%;
-  width: 220px;
+  width: 176px;
   height: auto;
   animation: float5 6s infinite ease-in-out;
 }
@@ -298,8 +299,8 @@
 
 .bubble_fragment {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   pointer-events: none;
@@ -367,6 +368,8 @@
     transform: translate(0, 0);
   }
 }
+
+
 
 @keyframes float2 {
   0% {
@@ -453,7 +456,7 @@
 .sosukec_img {
   top: 50%;
   left: 60%;
-  width: 220px;
+  width: 176px;
   height: auto;
   position: absolute;
   transition: transform 0.2s ease;
@@ -485,7 +488,7 @@
 
 .ponyo_img {
   position: absolute;
-  width: 380px;
+  width: 304px;
   top: 38%; 
   left: 46%; 
   opacity: 0;
@@ -526,10 +529,12 @@
 }
 
 
+
+
 .boat_img {
   top: 65%;
   left: 58.3%;
-  width: 85px;
+  width: 68px;
   height: auto;
   rotate: 5deg;
   position: absolute;
@@ -537,7 +542,7 @@
 }
 
 .boat_img.tilt {
-  animation: boatTilt 1s ease-out forwards;
+  animation: boatTilt 0.8s ease-out forwards;
 }
 
 @keyframes boatTilt {
@@ -545,7 +550,7 @@
     transform: translateY(0) rotate(0deg);
   }
   100% {
-    transform: translateY(160px) rotate(-60deg);
+    transform: translateY(140px) rotate(-60deg);
   }
 }
 
@@ -553,7 +558,7 @@
   position: absolute;
   top: 71.6%;
   left: 62.5%;
-  width: 140px;
+  width: 112px;
   height: auto;
   z-index: 8;
 }
@@ -582,35 +587,32 @@
   }
 }
 
-
-.wave-container {
-  position: absolute; 
-  top: 12.8%;
-  left: 42%;
-  width: 460px;
-  height: auto;      
-  padding: 10px 0;   
-  overflow: visible;
-  overflow: hidden;
-  transform: translateX(-50%); 
-  z-index: 1; 
+.text_img {
+  top: 14%;
+  left: 30%;
+  width: 368px;
+  height: auto;
+  position: absolute;
 }
 
-.text_wave_img {
+
+
+
+
+.bucket_img {
   width: 100%;
-  display: block;
-  animation: waveMotion 4s infinite linear;
-  position: relative;
+  transform: rotate(50deg);
+  transform-origin: center bottom; /
 }
-
-
 
 
 
 .text2_img {
-  top: 7%;
-  left: 37.7%;
-  width: 128px;
+  top: 6.5%;
+  left: 37.3%;
+  width: 113px;
   height: auto;
 }
+
+
 
